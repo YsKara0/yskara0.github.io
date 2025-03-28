@@ -5,40 +5,71 @@ document.addEventListener('DOMContentLoaded', function() {
     const username = 'YsKara0';
     const projectsContainer = document.getElementById('projects-container');
     
-    // Fetch GitHub repositories
+    // List of projects to display (in desired order)
+    const projectsList = [
+        {
+            name: "f2pgames",
+            customDescription: "A collection of free-to-play games with modern UI",
+            liveUrl: "https://yskara0.github.io/f2pgames/"
+        },
+        {
+            name: "fullstack_restaurant_website",
+            customDescription: "A fullstack restaurant website written with TypeScript",
+            // liveUrl: "https://yskara0.github.io/Shopping-Cart/"
+        },
+        {
+            name: "depot_management_app",
+            customDescription: "Depot management desktop app written in java",
+            // liveUrl: "https://yskara0.github.io/CV-Application/"
+        },
+        {
+            name: "ProductMarketingWebsite",
+            customDescription: "A product marketing website for a medical product",
+             liveUrl: "https://yskara0.github.io/ProductMarketingWebsite/"
+        },
+        {
+            name: "logistics_dbms_project",
+            customDescription: "Logistics DBMS project written in Sql",
+            // liveUrl: "https://yskara0.github.io/ProductMarketingWebsite/"
+        }
+        // Add more projects as needed
+    ];
+    
+    // Fetch all repos first
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
-        .then(repos => {
-            // Sort by updated date (newest first)
-            repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        .then(allRepos => {
+            // Create a map for easy lookup
+            const repoMap = {};
+            allRepos.forEach(repo => {
+                repoMap[repo.name] = repo;
+            });
             
-            // Display only the first 6 repos or fewer if there aren't 6
-            const featuredRepos = repos.slice(0, 6);
-            
-            featuredRepos.forEach(repo => {
-                // Manual override for specific projects
-                if (repo.name === 'f2pgames') {
-                    repo.homepage = 'https://yskara0.github.io/f2pgames/';
-                }
+            // Display projects in the order specified
+            projectsList.forEach(project => {
+                const repoData = repoMap[project.name] || {};
                 
                 const projectCard = document.createElement('div');
                 projectCard.className = 'project-card';
                 
+                // Use custom description if provided, otherwise use GitHub description
+                const description = project.customDescription || repoData.description || 'No description available';
+                
                 // Create buttons container
                 const buttonsHTML = `
                     <div class="project-buttons">
-                        <a href="${repo.html_url}" target="_blank" class="repo-link">View on GitHub</a>
-                        ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="live-link">View Live</a>` : ''}
+                        <a href="https://github.com/${username}/${project.name}" target="_blank" class="repo-link">View on GitHub</a>
+                        ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" class="live-link">View Live</a>` : ''}
                     </div>
                 `;
                 
                 projectCard.innerHTML = `
-                    <h3>${repo.name}</h3>
-                    <p>${repo.description || 'No description available'}</p>
+                    <h3>${project.name}</h3>
+                    <p>${description}</p>
                     <div class="repo-details">
-                        <span>${repo.language || 'Various'}</span>
-                        <span>⭐ ${repo.stargazers_count}</span>
-                        <span>🍴 ${repo.forks_count}</span>
+                        <span>${repoData.language || 'Various'}</span>
+                        <span>⭐ ${repoData.stargazers_count || 0}</span>
+                        <span>🍴 ${repoData.forks_count || 0}</span>
                     </div>
                     ${buttonsHTML}
                 `;
