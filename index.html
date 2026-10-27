@@ -1,38 +1,30 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YsKara0 GitHub Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Yavuz Selim Kara'nın kişisel portfolyosu. Yazılım projeleri ve deneyimleri.">
+<meta name="theme-color" content="#101012"><title>Yavuz Selim Kara — Portfolyo</title>
+<link rel="stylesheet" href="css/style.css"><script defer src="js/projects.js"></script><script defer src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to YsKara0's GitHub Portfolio</h1>
-        <nav>
-            <ul>
-                <!-- <li><a href="pages/about.html">About</a></li> -->
-                <li><a href="pages/projects.html">Projects</a></li>
-                <!-- <li><a href="pages/contact.html">Contact</a></li> -->
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="introduction">
-            <h2>Hello!</h2>
-            <p>I'm Yavuz Selim Kara, a dedicated developer with a passion for creating innovative solutions. Here you can explore my GitHub projects and learn more about my skills and experience.</p>
-        </section>
-        <section id="featured-projects">
-            <h2>Featured Projects</h2>
-            <div id="projects-container"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Yavuz Selim Kara. All rights reserved.</p>
-    </footer>
-    <script src="js/projects.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+<a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+<header class="header wrap">
+<a class="brand" href="#about" aria-label="Yavuz Selim Kara">ysk<span>/</span></a>
+<nav aria-label="Menü"><a href="#about" data-i18n="about">Hakkımda</a><a href="#projects" data-i18n="projects">Projeler</a><a href="#experience" data-i18n="experience">Tecrübe</a><a class="nav-contact" href="https://github.com/yskara0" target="_blank" rel="noopener noreferrer">GitHub ↗</a><div class="language-switch" role="group" aria-label="Language / Dil"><button type="button" data-language="tr" aria-pressed="true" aria-label="Türkçe">TR</button><button type="button" data-language="en" aria-pressed="false" aria-label="English">EN</button></div></nav>
+</header>
+<main id="main">
+<section class="hero wrap" id="about">
+<div class="identity"><span class="hello" data-i18n="portfolioLabel">Yavuz Selim Kara / Kişisel portfolyo</span><h1>Yavuz<br>Selim Kara</h1><p class="role" data-i18n="role">Yazılım geliştirici</p><a class="profile-link" href="https://github.com/yskara0" target="_blank" rel="noopener noreferrer"><span class="profile-icon" aria-hidden="true">↗</span><span data-i18n="profileHandle">GitHub'da @yskara0</span></a></div>
+<div class="hero-story"><h2 data-i18n="greeting">Merhaba, ben Yavuz.</h2><p data-i18n="bio">Mobil uygulamalar ve backend sistemleriyle ilgileniyorum. Yeni şeyler öğrenmeyi ve öğrendiklerimi projelerde denemeyi seviyorum.</p><p data-i18n="bioSecond">Burası, üzerinde çalıştığım projeleri ve yazılım yolculuğumu bir araya getirdiğim kişisel alanım.</p><a class="primary" href="#projects"><span data-i18n="viewProjects">Projelerime göz at</span><span aria-hidden="true">↘</span></a></div>
+</section>
+<section id="projects" class="work wrap"><div class="section-top"><div><h2 data-i18n="projects">Projeler</h2><p class="section-description" data-i18n="projectsIntro">Üzerinde çalıştığım ürünler, projelerdeki rolüm ve kullandığım teknolojiler.</p></div><span class="project-count" id="project-count"></span></div><div id="projects-container"></div><noscript><p>JavaScript gereklidir. / JavaScript is required to display projects.</p></noscript></section>
+<section class="experience wrap" id="experience">
+<div class="section-top"><div><h2 data-i18n="experience">Tecrübe</h2><p class="section-description" data-i18n="experienceIntro">Çalıştığım ekipler ve yer aldığım işler.</p></div></div>
+<div class="experience-list">
+<article class="experience-entry"><div class="experience-dates"><time datetime="2025-02" data-i18n="tubitakStart">Şubat 2025</time> — <time datetime="2026-06" data-i18n="tubitakEnd">Haziran 2026</time></div><div class="experience-detail"><h3>TÜBİTAK 1505</h3><p class="experience-role" data-i18n="scholar">Bursiyer</p><p data-i18n="tubitakDescription">Matter protokolü ve görüntü işleme üzerine çalışmalar.</p><ul class="tags"><li>Matter</li><li data-i18n="imageProcessing">Görüntü işleme</li></ul></div></article>
+<article class="experience-entry"><div class="experience-dates"><time datetime="2025-07" data-i18n="internStart">Temmuz 2025</time> — <time datetime="2025-09" data-i18n="internEnd">Eylül 2025</time></div><div class="experience-detail"><h3>Piri Medya</h3><p class="experience-role" data-i18n="internRole">Mobil Geliştirici Stajyeri</p><p data-i18n="internDescription">Mobil uygulama geliştirme alanında staj.</p></div></article>
+</div></section>
+<section class="closing wrap"><div><h2 data-i18n="closingTitle">Tanıştığımıza sevindim.</h2><p data-i18n="closingText">Diğer çalışmalarımı GitHub profilimde bulabilirsin.</p></div><a class="primary" href="https://github.com/yskara0" target="_blank" rel="noopener noreferrer"><span data-i18n="githubProfile">GitHub profilim</span><span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="wrap"><a class="brand" href="#about">ysk<span>/</span></a><span>© <span id="year">2026</span> Yavuz Selim Kara</span><a href="https://github.com/yskara0" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+</body></html>

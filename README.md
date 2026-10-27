@@ -1,53 +1,20 @@
-# Personal GitHub Portfolio
+# Yavuz Selim Kara — Portfolio
 
-This project is a personal website designed to showcase GitHub projects. It is built using HTML, CSS, and JavaScript, providing a clean and responsive interface for users to explore various projects.
+GitHub Pages üzerinde çalışan, Türkçe ve İngilizce kişisel portfolyo. Derleme gerektirmez.
 
-## Project Structure
+## Yerel önizleme
 
-```
-personal-github-portfolio
-├── index.html          # Main entry point of the website
-├── css
-│   ├── style.css      # Main styles for the website
-│   └── reset.css      # CSS reset for consistent styling across browsers
-├── js
-│   ├── main.js        # Main JavaScript for handling interactions
-│   └── projects.js    # JavaScript for managing and displaying GitHub projects
-├── assets
-│   └── fonts
-│       └── fontawesome # Font Awesome icons for the website
-├── pages
-│   ├── about.html     # About page content
-│   ├── contact.html   # Contact page content
-│   └── projects.html  # Projects page showcasing GitHub projects
-└── README.md          # Documentation for the project
-```
+`python3 -m http.server 4173`
 
-## Features
+Tarayıcıda http://localhost:4173 adresini açın. Dil seçimi TR / EN düğmeleriyle değiştirilir; tercih yerel olarak hatırlanır. Paylaşılabilir adresler: `?lang=tr` ve `?lang=en`.
 
-- **Responsive Design**: The website is designed to be mobile-friendly and responsive across various devices.
-- **Project Showcase**: A dedicated page to display GitHub projects with descriptions and links.
-- **About Section**: Information about the individual or project.
-- **Contact Form**: A section for visitors to get in touch.
+## İçerik
 
-## Setup Instructions
+- `index.html`: sayfa yapısı ve varsayılan Türkçe içerik.
+- `js/main.js`: ortak metinlerin çevirileri, dil geçişi ve proje gösterimi.
+- `js/projects.js`: sıralı proje listesi. Her proje `tr` ve `en` alanlarında ad, açıklama, rol, özellikler ve mimari metinlerini içerir.
+- `css/style.css`: koyu kırmızı tema, responsive düzen ve hafif hareketler.
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/personal-github-portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd personal-github-portfolio
-   ```
-3. Open `index.html` in your web browser to view the website.
+Tam Finans bitirme projesi ve Kanuni Sultan Süleyman Hastanesi ile geliştirilen Akıllı Hastane Sistemi gösterilir. Üçüncü proje Reviel ürün tanıtım sitesidir ve https://reviel.com.tr/ adresinde yayındadır. Projelerin kaynak kodu özeldir. Tam Finans için canlı demo yoktur. Ekran görüntüsü yerine açıklamalı sistem mimarisi kullanılır. İleride eklenen projeler aynı yapıyı izleyebilir; sıralama listedeki sıradır. Projelerde gerçek bilgiler kullanın; özel kod, erişim anahtarı veya gizli şirket verisi eklemeyin.
 
-## Usage
-
-- Modify the `projects.js` file to add or update GitHub projects.
-- Customize styles in `style.css` to match your personal branding.
-- Update the content in `about.html` and `contact.html` as needed.
-
-## License
-
-This project is open-source and available under the MIT License.
+Animasyonlar `prefers-reduced-motion` tercihiyle devre dışı kalır. JavaScript çalışmadığında tanışma ve tecrübe içerikleri okunabilir durumdadır.
