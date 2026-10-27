@@ -20,3 +20,5 @@ Tam Finans bitirme projesi ve Kanuni Sultan Süleyman Hastanesi ile geliştirile
 Animasyonlar `prefers-reduced-motion` tercihiyle devre dışı kalır. JavaScript çalışmadığında tanışma ve tecrübe içerikleri okunabilir durumdadır.
 
 Dördüncü proje Zirve Çilingir CMS platformudur: Next.js/TypeScript ziyaretçi sitesi ve yönetim paneli, Java/Spring Boot REST API. Canlı adres: https://esenyurtzirvecilingir.com/.
+
+Beşinci proje Atlı Lojistik iş gücü yönetim sistemi, altıncı proje EfficientNet-B4 tabanlı askeri uçak sınıflandırma çalışmasıdır. Atlı Lojistik için kullanıcının tercihiyle canlı site veya giriş sayfası bağlantısı gösterilmez. Uçak sınıflandırma metrikleri paylaşılan proje özetinden alınmıştır.

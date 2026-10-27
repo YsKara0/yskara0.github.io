@@ -244,5 +244,151 @@ window.portfolioProjects = [{
     "note": "The source code and admin panel are private; the public website is live.",
     "liveLabel": "Visit live website"
   }
+},
+{
+  "id": "atli-logistics",
+  "private": true,
+  "tags": [
+    "Java",
+    "Spring Boot",
+    "React",
+    "MySQL",
+    "JWT",
+    "Cloudflare R2"
+  ],
+  "tr": {
+    "name": "Atlı Lojistik",
+    "subtitle": "Lojistik operasyonları / İş gücü yönetim sistemi",
+    "description": "Lojistik operasyonlarında iş gücü yönetimi için geliştirilen platform. Hiyerarşik yönetici rolleri, görev atama, ödeme takibi ve çalışan doğrulama süreçlerini React yönetim paneli ve REST backend üzerinden bir araya getiriyor.",
+    "roleTitle": "Proje kapsamı",
+    "role": "Operasyon ekiplerinin görev ve çalışan süreçlerini yönetmesine yönelik, React arayüzü ve Spring Boot REST API katmanından oluşan bir sistem.",
+    "highlights": [
+      "Hiyerarşik yönetici rolleri ve güvenli görev atama.",
+      "Ödeme takibi ve çalışan doğrulama süreçleri.",
+      "MySQL veri katmanı, JWT ile kimlik doğrulama ve Cloudflare R2 entegrasyonu."
+    ],
+    "visualTitle": "Operasyondan takibe.",
+    "visualLabel": "Sistem mimarisi",
+    "layers": [
+      [
+        "Yönetim paneli",
+        "React"
+      ],
+      [
+        "Backend / REST API",
+        "Java · Spring Boot"
+      ]
+    ],
+    "foundation": "MySQL / JWT / Cloudflare R2",
+    "privateLabel": "Kaynak kodu özel",
+    "projectType": "İş gücü yönetimi",
+    "note": "Kaynak kodu özel tutuluyor.",
+    "liveLabel": "Canlı siteyi ziyaret et"
+  },
+  "en": {
+    "name": "Atlı Logistics",
+    "subtitle": "Logistics operations / Workforce management system",
+    "description": "A workforce management platform for logistics operations. It combines hierarchical admin roles, task assignment, payment tracking and worker verification through a React dashboard and a REST backend.",
+    "roleTitle": "Project scope",
+    "role": "A system built around a React interface and a Spring Boot REST API to help operations teams manage tasks and workforce processes.",
+    "highlights": [
+      "Hierarchical admin roles and secure task assignment.",
+      "Payment tracking and worker verification workflows.",
+      "A MySQL data layer, JWT authentication and Cloudflare R2 integration."
+    ],
+    "visualTitle": "From operations to oversight.",
+    "visualLabel": "System architecture",
+    "layers": [
+      [
+        "Admin dashboard",
+        "React"
+      ],
+      [
+        "Backend / REST API",
+        "Java · Spring Boot"
+      ]
+    ],
+    "foundation": "MySQL / JWT / Cloudflare R2",
+    "privateLabel": "Private source code",
+    "projectType": "Workforce management",
+    "note": "The source code is private.",
+    "liveLabel": "Visit live website"
+  }
+},
+{
+  "id": "aircraft-classification",
+  "private": true,
+  "tags": [
+    "Python",
+    "PyTorch",
+    "scikit-learn",
+    "NumPy",
+    "Pandas",
+    "EfficientNet-B4"
+  ],
+  "tr": {
+    "name": "Askeri Uçak Sınıflandırma",
+    "subtitle": "Bilgisayarlı görü / Derin öğrenme hattı",
+    "description": "38.826 görüntü üzerinden 89 farklı askeri uçak türünü sınıflandıran, EfficientNet-B4 tabanlı derin öğrenme projesi. Eğitim, değerlendirme ve çıkarım aşamalarını kapsayan bir iş akışı içeriyor.",
+    "roleTitle": "Proje kapsamı",
+    "role": "Sınıf dengesizliğini ele alan eğitim yaklaşımı, model değerlendirme süreci ve eğitilmiş modelle görüntü sınıflandırma.",
+    "highlights": [
+      "89 uçak türü ve 38.826 görüntüden oluşan veri seti.",
+      "Ağırlıklı kayıp fonksiyonu ve yoğun veri artırma ile sınıf dengesizliğini ele alma.",
+      "EfficientNet-B4 ile %92,86 Top-1 doğruluk; değerlendirme ve çıkarım hattı."
+    ],
+    "visualTitle": "Görüntüden sınıflandırmaya.",
+    "visualLabel": "Model iş akışı",
+    "layers": [
+      [
+        "Veri seti",
+        "38.826 görüntü / 89 sınıf"
+      ],
+      [
+        "Derin öğrenme modeli",
+        "EfficientNet-B4 · PyTorch"
+      ],
+      [
+        "Top-1 doğruluk",
+        "%92,86"
+      ]
+    ],
+    "foundation": "Veri artırma / Ağırlıklı kayıp / Çıkarım",
+    "privateLabel": "Kaynak kodu özel",
+    "projectType": "Yapay zekâ / Bilgisayarlı görü",
+    "note": "Kaynak kodu özel tutuluyor."
+  },
+  "en": {
+    "name": "Military Aircraft Classification",
+    "subtitle": "Computer vision / Deep learning pipeline",
+    "description": "An EfficientNet-B4 deep learning project classifying 89 military aircraft types across 38,826 images. The workflow covers training, evaluation and inference.",
+    "roleTitle": "Project scope",
+    "role": "A training approach that addresses class imbalance, a model evaluation workflow and image classification using the trained model.",
+    "highlights": [
+      "A dataset of 38,826 images spanning 89 aircraft types.",
+      "Weighted loss and extensive data augmentation to address class imbalance.",
+      "92.86% Top-1 accuracy with EfficientNet-B4, with evaluation and inference pipelines."
+    ],
+    "visualTitle": "From image to classification.",
+    "visualLabel": "Model workflow",
+    "layers": [
+      [
+        "Dataset",
+        "38,826 images / 89 classes"
+      ],
+      [
+        "Deep learning model",
+        "EfficientNet-B4 · PyTorch"
+      ],
+      [
+        "Top-1 accuracy",
+        "92.86%"
+      ]
+    ],
+    "foundation": "Augmentation / Weighted loss / Inference",
+    "privateLabel": "Private source code",
+    "projectType": "AI / Computer vision",
+    "note": "The source code is private."
+  }
 }
 ];
