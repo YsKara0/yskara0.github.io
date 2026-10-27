@@ -54,3 +54,5 @@
 
 /* SVG arrows render consistently, including iOS Safari. */
 .icon{display:inline-block;width:18px;height:18px;flex:none;vertical-align:middle;color:inherit}.profile-icon{color:var(--accent-text)}.nav-contact,.text-link,footer>a:last-child{display:inline-flex;align-items:center;gap:7px}.nav-contact .icon,footer .icon{width:15px;height:15px}
+
+.closing-links{display:flex;flex-wrap:wrap;gap:12px}.closing-links .primary{gap:18px}.primary.secondary{background:transparent;border-color:#633032}.primary.secondary:hover{background:#241315}@media(max-width:1050px){.closing-links{flex-direction:column}}@media(max-width:700px){.closing-links{flex-direction:row;width:100%}.closing-links .primary{padding:12px 15px;font-size:12px;gap:12px}}

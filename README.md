@@ -18,3 +18,5 @@ Tarayıcıda http://localhost:4173 adresini açın. Dil seçimi TR / EN düğmel
 Tam Finans bitirme projesi ve Kanuni Sultan Süleyman Hastanesi ile geliştirilen Akıllı Hastane Sistemi gösterilir. Üçüncü proje Reviel ürün tanıtım sitesidir ve https://reviel.com.tr/ adresinde yayındadır. Projelerin kaynak kodu özeldir. Tam Finans için canlı demo yoktur. Ekran görüntüsü yerine açıklamalı sistem mimarisi kullanılır. İleride eklenen projeler aynı yapıyı izleyebilir; sıralama listedeki sıradır. Projelerde gerçek bilgiler kullanın; özel kod, erişim anahtarı veya gizli şirket verisi eklemeyin.
 
 Animasyonlar `prefers-reduced-motion` tercihiyle devre dışı kalır. JavaScript çalışmadığında tanışma ve tecrübe içerikleri okunabilir durumdadır.
+
+Dördüncü proje Zirve Çilingir CMS platformudur: Next.js/TypeScript ziyaretçi sitesi ve yönetim paneli, Java/Spring Boot REST API. Canlı adres: https://esenyurtzirvecilingir.com/.

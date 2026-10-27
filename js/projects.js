@@ -163,5 +163,86 @@ window.portfolioProjects = [{
     "note": "The source code is private; the live website is public.",
     "liveLabel": "Visit live website"
   }
+},
+{
+  "id": "zirve",
+  "private": true,
+  "liveUrl": "https://esenyurtzirvecilingir.com/",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "Java",
+    "Spring Boot",
+    "REST API",
+    "JWT",
+    "RBAC",
+    "2FA"
+  ],
+  "tr": {
+    "name": "Zirve Çilingir",
+    "subtitle": "İçerik yönetim sistemi / Kurumsal web sitesi",
+    "description": "Zirve Çilingir için geliştirdiğim, site içeriğinin büyük bölümünün yönetim panelinden güncellenebildiği CMS tabanlı web platformu. Ziyaretçi sitesi, ayrı yönetim paneli ve Spring Boot REST API katmanından oluşuyor.",
+    "roleTitle": "Fullstack geliştirme",
+    "role": "Ziyaretçi arayüzünü, içerik yönetim panelini ve backend katmanını ayrı uygulamalar olarak geliştirdim. Amaç, içerik değişikliklerinin kod düzenlemeden yönetilebilmesiydi.",
+    "highlights": [
+      "Site içeriğinin büyük bölümünü yönetim panelinden düzenleme imkânı.",
+      "Çilingir ve oto anahtar hizmetleri, hizmet bölgeleri, blog ve sıkça sorulan sorular sayfaları.",
+      "JWT ve rol tabanlı erişim kontrolü; iki faktörlü kimlik doğrulama, istek sınırlama ve kullanıcı yönetimi."
+    ],
+    "visualTitle": "İçerik değişir, kod değil.",
+    "visualLabel": "CMS yapısı",
+    "layers": [
+      [
+        "Ziyaretçi sitesi",
+        "Next.js · TypeScript"
+      ],
+      [
+        "İçerik yönetim paneli",
+        "Next.js · TypeScript"
+      ],
+      [
+        "Backend / REST API",
+        "Java · Spring Boot"
+      ]
+    ],
+    "foundation": "JWT / RBAC / 2FA / Rate limiting",
+    "privateLabel": "Kaynak kodu özel",
+    "projectType": "Yayında",
+    "note": "Kaynak kodu ve yönetim paneli özel; ziyaretçi sitesi herkese açık.",
+    "liveLabel": "Canlı siteyi ziyaret et"
+  },
+  "en": {
+    "name": "Zirve Çilingir",
+    "subtitle": "Content management system / Business website",
+    "description": "A CMS-based web platform I developed for Zirve Çilingir, with most website content editable through an admin panel. It consists of a public website, a separate admin application and a Spring Boot REST API.",
+    "roleTitle": "Fullstack development",
+    "role": "I developed the public interface, content management panel and backend as separate applications. The goal was to make content updates possible without editing code.",
+    "highlights": [
+      "An admin panel for updating most of the website’s content.",
+      "Pages covering locksmith and car key services, service areas, a blog and frequently asked questions.",
+      "JWT and role-based access control, two-factor authentication, rate limiting and user management."
+    ],
+    "visualTitle": "Update content, not code.",
+    "visualLabel": "CMS structure",
+    "layers": [
+      [
+        "Public website",
+        "Next.js · TypeScript"
+      ],
+      [
+        "Content management panel",
+        "Next.js · TypeScript"
+      ],
+      [
+        "Backend / REST API",
+        "Java · Spring Boot"
+      ]
+    ],
+    "foundation": "JWT / RBAC / 2FA / Rate limiting",
+    "privateLabel": "Private source code",
+    "projectType": "Live website",
+    "note": "The source code and admin panel are private; the public website is live.",
+    "liveLabel": "Visit live website"
+  }
 }
 ];
