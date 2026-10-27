@@ -27,7 +27,10 @@
       const list=create('ul','project-highlights');data.highlights.forEach(item=>list.append(create('li','',item)));info.append(list);
       const tags=create('ul','tags');tags.setAttribute('aria-label',t.technologies);project.tags.forEach(tag=>tags.append(create('li','',tag)));info.append(tags);
       if(project.liveUrl){
-        try{const url=new URL(project.liveUrl);if(url.protocol==='https:'){const actions=create('div','project-links');const link=create('a','text-link',data.liveLabel);link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';actions.append(link);info.append(actions);}}catch{}
+        try{const url=new URL(project.liveUrl);if(url.protocol==='https:'){const actions=create('div','project-links');const link=create('a','text-link',data.liveLabel);link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';
+          const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');
+          Object.entries({class:'icon',viewBox:'0 0 24 24',fill:'none',stroke:'currentColor','stroke-width':'1.7','stroke-linecap':'round','stroke-linejoin':'round','aria-hidden':'true',focusable:'false'}).forEach(([key,value])=>icon.setAttribute(key,value));
+          const path=document.createElementNS('http://www.w3.org/2000/svg','path');path.setAttribute('d','M7 17 17 7M7 7h10v10');icon.append(path);link.append(icon);actions.append(link);info.append(actions);}}catch{}
       }
       info.append(create('p','project-note',data.note));
       const visual=create('div','project-visual architecture');visual.append(create('p','visual-caption',data.visualLabel),create('h4','visual-title',data.visualTitle));

@@ -132,7 +132,7 @@ window.portfolioProjects = [{
     "privateLabel": "Kaynak kodu özel",
     "projectType": "Yayında",
     "note": "Kaynak kodu özel tutuluyor; canlı site herkese açık.",
-    "liveLabel": "Canlı siteyi ziyaret et ↗"
+    "liveLabel": "Canlı siteyi ziyaret et"
   },
   "en": {
     "name": "Reviel",
@@ -161,7 +161,7 @@ window.portfolioProjects = [{
     "privateLabel": "Private source code",
     "projectType": "Live website",
     "note": "The source code is private; the live website is public.",
-    "liveLabel": "Visit live website ↗"
+    "liveLabel": "Visit live website"
   }
 }
 ];
